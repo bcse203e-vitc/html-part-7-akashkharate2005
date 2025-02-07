@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <H1 id="hell">Guess the random number between 1 to 100</H1>
+</body>
+<script>
+    random_number=Math.floor(Math.random()*100);
+    console.log(random_number);
+    document.getElementById('hell').innerHTML='Correct guess';
+    n=prompt("enter a number");
+    if(n==random_number)
+    {
+        document.getElementById('hell').innerHTML='Correct guess';
+    }
+    else
+    {
+        document.getElementById("hell").innerHTML='Wrong guess';
+    }
+</script>
+</html>
